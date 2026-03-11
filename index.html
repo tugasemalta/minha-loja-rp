@@ -5,23 +5,28 @@
 <title>Minha Loja RP</title>
 
 <style>
-
+/* Fundo e corpo */
 body{
     margin:0;
     font-family: Arial;
-    background:#0f0f0f;
+    background: url('fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
     color:white;
 }
 
+/* Banner topo */
 header{
-    background:#111;
-    padding:20px;
+    background: rgba(0,0,0,0.7);
+    padding:40px;
     text-align:center;
-    font-size:28px;
+    font-size:32px;
+    font-weight:bold;
+    color:#ff3c3c;
 }
 
+/* Menu */
 nav{
-    background:#1a1a1a;
+    background: rgba(0,0,0,0.8);
     padding:10px;
     display:flex;
     flex-wrap:wrap;
@@ -35,25 +40,43 @@ nav a{
     margin:5px;
     background:#222;
     border-radius:6px;
+    transition:0.3s;
 }
 
 nav a:hover{
     background:#ff3c3c;
 }
 
+/* Container dos produtos */
 .container{
     padding:40px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
+/* Cartões de produtos */
 .card{
-    background:#1b1b1b;
+    background: rgba(27,27,27,0.9);
     padding:20px;
-    margin:10px;
+    margin:15px;
     border-radius:10px;
-    display:inline-block;
     width:250px;
+    text-align:center;
+    transition: transform 0.2s;
 }
 
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width:100%;
+    border-radius:6px;
+    margin-bottom:10px;
+}
+
+/* Botão */
 button{
     background:#ff3c3c;
     border:none;
@@ -61,15 +84,15 @@ button{
     color:white;
     border-radius:6px;
     cursor:pointer;
+    font-weight:bold;
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-🔥 Minha Loja RP
+🔥 Minha Loja RP - VIPs e Veículos 🔥
 </header>
 
 <nav>
@@ -91,21 +114,62 @@ button{
 
 <div class="container">
 
+<!-- VIPs -->
 <div class="card">
+<img src="vip_bronze.jpg" alt="VIP Bronze">
 <h3>VIP Bronze</h3>
 <p>Benefícios exclusivos no servidor</p>
 <button>Comprar</button>
 </div>
 
 <div class="card">
-<h3>Carro Raro</h3>
+<img src="vip_prata.jpg" alt="VIP Prata">
+<h3>VIP Prata</h3>
+<p>Mais benefícios e itens</p>
+<button>Comprar</button>
+</div>
+
+<div class="card">
+<img src="vip_ouro.jpg" alt="VIP Ouro">
+<h3>VIP Ouro</h3>
+<p>Todos os benefícios VIP + extras</p>
+<button>Comprar</button>
+</div>
+
+<!-- Carros -->
+<div class="card">
+<img src="carro1.jpg" alt="Carro Raro 1">
+<h3>Carro Raro 1</h3>
 <p>Veículo exclusivo</p>
 <button>Comprar</button>
 </div>
 
 <div class="card">
-<h3>Mansão</h3>
-<p>Casa exclusiva no mapa</p>
+<img src="carro2.jpg" alt="Carro Raro 2">
+<h3>Carro Raro 2</h3>
+<p>Veículo de edição limitada</p>
+<button>Comprar</button>
+</div>
+
+<div class="card">
+<img src="carro3.jpg" alt="Carro Raro 3">
+<h3>Carro Raro 3</h3>
+<p>Velocidade máxima e design único</p>
+<button>Comprar</button>
+</div>
+
+<!-- Casas -->
+<div class="card">
+<img src="casa1.jpg" alt="Casa 1">
+<h3>Mansão Praia</h3>
+<p>Localização exclusiva e luxuosa</p>
+<button>Comprar</button>
+</div>
+
+<div class="card">
+<img src="casa2.jpg" alt="Casa 2">
+<h3>Apartamento VIP</h3>
+<p>Ideal para jogadores elite</p>
 <button>Comprar</button>
 </div>
 
