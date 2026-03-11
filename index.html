@@ -5,9 +5,10 @@
 <title>Minha Loja RP</title>
 
 <style>
+/* Fundo e corpo */
 body {
     margin:0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: url('fundo.jpg') no-repeat center center fixed;
     background-size: cover;
     color:white;
@@ -19,21 +20,10 @@ body {
     top:0;
     left:0;
     width:100%;
-    height:120px; /* altura do banner */
+    height:120px;
     background: url('banner.jpg') no-repeat center center;
     background-size: cover;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     z-index:1000;
-    border-bottom: 3px solid #ff3c3c; /* opcional, destaca o banner */
-}
-
-/* Título dentro do banner */
-#banner h1 {
-    color:white;
-    font-size:36px;
-    text-shadow: 2px 2px 6px black;
 }
 
 /* Menu abaixo do banner */
@@ -45,7 +35,7 @@ nav {
     flex-wrap:wrap;
     justify-content:center;
     position:sticky;
-    top:0; /* sticky para ficar visível quando rolar */
+    top:0;
     z-index:999;
 }
 
@@ -103,15 +93,23 @@ button {
     font-weight:bold;
 }
 
+/* Responsivo simples */
+@media screen and (max-width: 600px){
+    .card{
+        width:90%;
+    }
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+}
 </style>
 </head>
 
 <body>
 
 <!-- Banner fixo -->
-<div id="banner">
-    <h1>🌆 Cidade RP - Vila Alta</h1>
-</div>
+<div id="banner"></div>
 
 <!-- Menu -->
 <nav>
@@ -134,6 +132,7 @@ button {
 <!-- Conteúdo -->
 <div class="container">
 
+<!-- VIPs -->
 <div class="card">
 <img src="vip_bronze.jpg" alt="VIP Bronze">
 <h3>VIP Bronze</h3>
@@ -149,6 +148,14 @@ button {
 </div>
 
 <div class="card">
+<img src="vip_ouro.jpg" alt="VIP Ouro">
+<h3>VIP Ouro</h3>
+<p>Todos os benefícios VIP + extras</p>
+<button>Comprar</button>
+</div>
+
+<!-- Carros -->
+<div class="card">
 <img src="carro1.jpg" alt="Carro Raro 1">
 <h3>Carro Raro 1</h3>
 <p>Veículo exclusivo</p>
@@ -163,9 +170,39 @@ button {
 </div>
 
 <div class="card">
+<img src="carro3.jpg" alt="Carro Raro 3">
+<h3>Carro Raro 3</h3>
+<p>Velocidade máxima e design único</p>
+<button>Comprar</button>
+</div>
+
+<!-- Casas -->
+<div class="card">
 <img src="casa1.jpg" alt="Casa 1">
 <h3>Mansão Praia</h3>
 <p>Localização exclusiva e luxuosa</p>
+<button>Comprar</button>
+</div>
+
+<div class="card">
+<img src="casa2.jpg" alt="Casa 2">
+<h3>Apartamento VIP</h3>
+<p>Ideal para jogadores elite</p>
+<button>Comprar</button>
+</div>
+
+<!-- Extras -->
+<div class="card">
+<img src="extra1.jpg" alt="Extra 1">
+<h3>Pacote de Armas</h3>
+<p>Armas exclusivas para VIPs</p>
+<button>Comprar</button>
+</div>
+
+<div class="card">
+<img src="extra2.jpg" alt="Extra 2">
+<h3>Veículo Blindado</h3>
+<p>Proteção máxima para o servidor</p>
 <button>Comprar</button>
 </div>
 
